@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  font-family: 'Delius Unicase', cursive;
+}
+
+.popup-display {
+  display: none;
+}
+
+.fieldset {
+  @apply flex flex-col;
+  font-family: 'Delius Unicase', cursive;
+}
+
+.label {
+  @apply p-4;
+}
+
+.input {
+  @apply border border-solid border-indigo-200 w-full text-center;
+}
+
+.counting {
+  color: #4fd1c5;
+}
+
+@media only screen and (max-width: 768px) {
+  .input {
+    @apply text-xs;
+  }
+
+  .kids {
+    order: 2;
+  }
+
+  .retire {
+    order: 3;
+  }
+
+  .pet {
+    order: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .startBtn {
+    order: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 60%;
+    margin: 1rem auto;
+  }
+}

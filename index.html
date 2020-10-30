@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <title>MASH</title>
+  </head>
+
+  <body class="bg-indigo-100 text-indigo-900">
+    <header class="flex justify-end">
+      <button
+        class="border rounded-full border-indigo-600 py-1 px-3 lg:py-2 lg:px-4 mt-2 mr-2 lg:mt-5 lg:mr-5 bg-indigo-500 hover:bg-indigo-600 text-white rulesBtn"
+      >
+        ?
+      </button>
+    </header>
+
+    <div
+      class="rulesPopup popup-display fixed z-10 w-full h-full left-0 top-0 top-0 overflow-auto bg-indigo-400 bg-opacity-75"
+    >
+      <div
+        class="rulesContent bg-indigo-200 mt-4 mb-4 lg:mt-48 mx-auto py-16 border rounded border-indigo-300 w-11/12 lg:w-3/4"
+      >
+        <div class="flex justify-end items-end -mt-12 pr-8">
+          <span
+            class="close text-pink-700 hover:text-indigo-700 text-3xl font-bold cursor-pointer"
+            >&times;</span
+          >
+        </div>
+        <h1 class="pb-4 font-bold text-xl text-center">Game Rules</h1>
+        <div class="w-3/4 m-auto text-justify">
+          <p class="pb-4 leading-relaxed lg:leading-8">
+            The beloved game of MASH (Mansion, Apartment, Shack, House) predicts
+            your future home along with several other important details of your
+            life. Originally played with just a piece of paper and a pen, this
+            version is the virtual fortune telling experience for the modern
+            day!
+          </p>
+          <p class="pb-4 leading-relaxed lg:leading-8">
+            For each category you will provide a total of 5 responses. To keep
+            things interesting you should give 2 answers you would absolutely
+            want, 1 answer that you are indifferent about, and 2 answers you
+            would absolutely NOT want. If you are playing with friends, let your
+            friends choose some or (if you're brave) all of the answers for you.
+          </p>
+          <p class="pb-4 leading-relaxed lg:leading-8">
+            When you have completed all of your responses click the "Tell My
+            Future" button at the bottom of the page. This will generate the
+            magic number which will appear on the screen. We will count each
+            category answer, starting from the "M" in MASH, until the magic
+            number is reached - the answer we land on gets crossed off. We
+            continue around the page starting from the previously crossed off
+            answer, skipping over all other crossed off answers, counting up to
+            the magic number again and crossing off responses along the way.
+            When all but one answer has been eliminated from a category that
+            response will be underlined and locked into your future story.
+          </p>
+          <p class="leading-relaxed lg:leading-8">
+            When all categories have been underlined your future has been
+            secured and we will give you the run down of your future life!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <main class="flex justify-center items-center flex-col">
+      <h1 class="title text-6xl text-center">
+        <span class="home mansion text-pink-600">M</span>
+        <span class="home apartment text-indigo-500">A</span>
+        <span class="home shack text-teal-400">S</span>
+        <span class="home house text-purple-500">H</span>
+      </h1>
+      <p class="mainText mt-2 mb-8 text-center">
+        Uncertain about your future? Let the game of MASH decide your life for
+        you!
+      </p>
+      <div
+        class="lg:w-1/2 bg-indigo-200 px-6 py-4 lg:mb-16 border border-indigo-200 rounded"
+      >
+        <form
+          id="form"
+          class="grid gap-2 grid-cols-2 lg:grid-cols-3 lg:col-gap-8 flex flex-col text-center text-sm lg:text-base"
+          name="responseForm"
+          action=""
+          method="GET"
+        >
+          <fieldset class="fieldset spouse">
+            <label class="label" for="spouse">Spouse</label>
+            <input class="input" type="text" name="spouse" />
+            <input class="input" type="text" name="spouse" />
+            <input class="input" type="text" name="spouse" />
+            <input class="input" type="text" name="spouse" />
+            <input class="input" type="text" name="spouse" />
+          </fieldset>
+
+          <fieldset class="fieldset honeymoon">
+            <label class="label" for="honeymoon">Honeymoon</label>
+            <input class="input" type="text" name="honeymoon" />
+            <input class="input" type="text" name="honeymoon" />
+            <input class="input" type="text" name="honeymoon" />
+            <input class="input" type="text" name="honeymoon" />
+            <input class="input" type="text" name="honeymoon" />
+          </fieldset>
+
+          <fieldset class="fieldset city">
+            <label class="label" for="city">City</label>
+            <input class="input" type="text" name="city" />
+            <input class="input" type="text" name="city" />
+            <input class="input" type="text" name="city" />
+            <input class="input" type="text" name="city" />
+            <input class="input" type="text" name="city" />
+          </fieldset>
+
+          <fieldset class="fieldset your-job">
+            <label class="label" for="yourjob">Your Job</label>
+            <input class="input" type="text" name="yourjob" />
+            <input class="input" type="text" name="yourjob" />
+            <input class="input" type="text" name="yourjob" />
+            <input class="input" type="text" name="yourjob" />
+            <input class="input" type="text" name="yourjob" />
+          </fieldset>
+
+          <fieldset class="fieldset spouse-job">
+            <label class="label" for="spousejob">Spouse's Job</label>
+            <input class="input" type="text" name="spousejob" />
+            <input class="input" type="text" name="spousejob" />
+            <input class="input" type="text" name="spousejob" />
+            <input class="input" type="text" name="spousejob" />
+            <input class="input" type="text" name="spousejob" />
+          </fieldset>
+
+          <fieldset class="fieldset vehicle">
+            <label class="label" for="vehicle">Vehicle</label>
+            <input class="input" type="text" name="vehicle" />
+            <input class="input" type="text" name="vehicle" />
+            <input class="input" type="text" name="vehicle" />
+            <input class="input" type="text" name="vehicle" />
+            <input class="input" type="text" name="vehicle" />
+          </fieldset>
+
+          <fieldset class="fieldset kids">
+            <label class="label" for="kids">Number of Kids</label>
+            <input class="input" type="text" name="kids" />
+            <input class="input" type="text" name="kids" />
+            <input class="input" type="text" name="kids" />
+            <input class="input" type="text" name="kids" />
+            <input class="input" type="text" name="kids" />
+          </fieldset>
+
+          <fieldset class="fieldset pet">
+            <label class="label" for="pet">Pet</label>
+            <input class="input" type="text" name="pet" />
+            <input class="input" type="text" name="pet" />
+            <input class="input" type="text" name="pet" />
+            <input class="input" type="text" name="pet" />
+            <input class="input" type="text" name="pet" />
+          </fieldset>
+
+          <fieldset class="fieldset retire">
+            <label class="label" for="retire">Retirement Age</label>
+            <input class="input" type="text" name="retire" />
+            <input class="input" type="text" name="retire" />
+            <input class="input" type="text" name="retire" />
+            <input class="input" type="text" name="retire" />
+            <input class="input" type="text" name="retire" />
+          </fieldset>
+
+          <button
+            class="startBtn col-start-2 border rounded border-indigo-700 w-3/4 h-12 lg:py-3 lg:px-4 lg:my-1 lg:mx-auto lg:mt-4 bg-indigo-600 hover:bg-indigo-700 text-white"
+            type="submit"
+          >
+            Tell My Future!
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <div
+      class="future-popup popup-display fixed z-10 w-full h-full left-0 top-0 top-0 overflow-auto bg-indigo-400 bg-opacity-75"
+    >
+      <div
+        class="futureContent bg-indigo-200 mt-4 mb-4 lg:mt-48 mx-auto py-16 border rounded border-indigo-300 w-11/12 lg:w-3/4"
+      >
+        <h1 class="pb-4 font-bold text-xl text-center">
+          Welcome to Your Future
+        </h1>
+        <div class="w-3/4 m-auto text-justify flex flex-col">
+          <p class="pb-4 leading-relaxed lg:leading-8">
+            Congratulations! You marry your soulmate
+            <span class="future-spouse"></span>! After a beautiful wedding
+            surrounded by friends and family the two of you jetset off to your
+            unforgettable honeymoon in <span class="future-honeymoon"></span>.
+            Following the honeymoon, you settle down and move straight into your
+            dream <span class="future-home"></span> in
+            <span class="future-city"></span>. You work as a
+            <span class="future-yourjob"></span> and your spouse is a
+            <span class="future-spousejob"></span>. You have
+            <span class="future-kids"></span> kids together and adopt a pet
+            <span class="future-pet"></span>. Your family enjoys traveling
+            around in your <span class="future-vehicle"></span>, which is easily
+            recognizable by everyone in town! You happily retire at the age of
+            <span class="future-retire"></span>. Your future sure is looking
+            bright!
+          </p>
+
+          <button
+            class="border rounded border-indigo-400 py-4 px-8 lg:py-3 lg:px-4 mt-5 mr-5 lg:w-1/5 bg-indigo-500 hover:bg-indigo-600 text-indigo-100 justify-center self-center play-again-btn"
+          >
+            Play Again!
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
