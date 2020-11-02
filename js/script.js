@@ -88,7 +88,6 @@ let futureSpouseJob = document.querySelector('.future-spousejob');
 let futureKids = document.querySelector('.future-kids');
 let futurePet = document.querySelector('.future-pet');
 let futureVehicle = document.querySelector('.future-vehicle');
-let futureRetire = document.querySelector('.future-retire');
 
 function displayFuture() {
   futureSpouse.innerText = ` ${future.spouse}`;
@@ -100,7 +99,6 @@ function displayFuture() {
   futureKids.innerText = ` ${future.kids}`;
   futurePet.innerText = ` ${future.pet}`;
   futureVehicle.innerText = ` ${future.vehicle}`;
-  futureRetire.innerText = ` ${future.retire}`;
 
   futurePopup.style.display = 'block';
 

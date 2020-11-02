@@ -32,24 +32,8 @@
     @apply text-xs;
   }
 
-  .kids {
-    order: 2;
-  }
-
-  .retire {
-    order: 3;
-  }
-
-  .pet {
-    order: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    width: 50%;
-    margin: 0 auto;
-  }
-
   .startBtn {
-    order: 5;
+    order: 2;
     grid-column-start: 1;
     grid-column-end: 3;
     width: 60%;

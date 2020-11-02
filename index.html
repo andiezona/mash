@@ -25,7 +25,7 @@
       class="rulesPopup popup-display fixed z-10 w-full h-full left-0 top-0 top-0 overflow-auto bg-indigo-400 bg-opacity-75"
     >
       <div
-        class="rulesContent bg-indigo-200 mt-4 mb-4 lg:mt-48 mx-auto py-16 border rounded border-indigo-300 w-11/12 lg:w-3/4"
+        class="rulesContent bg-indigo-200 mt-4 mb-4 lg:my-16 mx-auto py-16 border rounded border-indigo-300 w-11/12 lg:w-3/4"
       >
         <div class="flex justify-end items-end -mt-12 pr-8">
           <span
@@ -81,11 +81,11 @@
         you!
       </p>
       <div
-        class="lg:w-1/2 bg-indigo-200 px-6 py-4 lg:mb-16 border border-indigo-200 rounded"
+        class="lg:w-3/4 bg-indigo-200 px-6 py-4 lg:mb-16 border border-indigo-200 rounded"
       >
         <form
           id="form"
-          class="grid gap-2 grid-cols-2 lg:grid-cols-3 lg:col-gap-8 flex flex-col text-center text-sm lg:text-base"
+          class="grid gap-2 grid-cols-2 lg:grid-cols-4 lg:col-gap-8 flex flex-col text-center text-sm lg:text-base"
           name="responseForm"
           action=""
           method="GET"
@@ -117,6 +117,15 @@
             <input class="input" type="text" name="city" />
           </fieldset>
 
+          <fieldset class="fieldset vehicle">
+            <label class="label" for="vehicle">Vehicle</label>
+            <input class="input" type="text" name="vehicle" />
+            <input class="input" type="text" name="vehicle" />
+            <input class="input" type="text" name="vehicle" />
+            <input class="input" type="text" name="vehicle" />
+            <input class="input" type="text" name="vehicle" />
+          </fieldset>
+
           <fieldset class="fieldset your-job">
             <label class="label" for="yourjob">Your Job</label>
             <input class="input" type="text" name="yourjob" />
@@ -135,17 +144,8 @@
             <input class="input" type="text" name="spousejob" />
           </fieldset>
 
-          <fieldset class="fieldset vehicle">
-            <label class="label" for="vehicle">Vehicle</label>
-            <input class="input" type="text" name="vehicle" />
-            <input class="input" type="text" name="vehicle" />
-            <input class="input" type="text" name="vehicle" />
-            <input class="input" type="text" name="vehicle" />
-            <input class="input" type="text" name="vehicle" />
-          </fieldset>
-
           <fieldset class="fieldset kids">
-            <label class="label" for="kids">Number of Kids</label>
+            <label class="label" for="kids"># of Kids</label>
             <input class="input" type="text" name="kids" />
             <input class="input" type="text" name="kids" />
             <input class="input" type="text" name="kids" />
@@ -162,20 +162,11 @@
             <input class="input" type="text" name="pet" />
           </fieldset>
 
-          <fieldset class="fieldset retire">
-            <label class="label" for="retire">Retirement Age</label>
-            <input class="input" type="text" name="retire" />
-            <input class="input" type="text" name="retire" />
-            <input class="input" type="text" name="retire" />
-            <input class="input" type="text" name="retire" />
-            <input class="input" type="text" name="retire" />
-          </fieldset>
-
           <button
-            class="startBtn col-start-2 border rounded border-indigo-700 w-3/4 h-12 lg:py-3 lg:px-4 lg:my-1 lg:mx-auto lg:mt-4 bg-indigo-600 hover:bg-indigo-700 text-white"
+            class="startBtn border rounded border-indigo-700 w-3/4 md:w-1/2 lg:w-1/4 h-12 md:col-span-2 lg:col-span-4 lg:py-3 lg:px-4 md:my-2 md:mx-auto lg:mt-4 bg-indigo-600 hover:bg-indigo-700 text-white"
             type="submit"
           >
-            Tell My Future!
+            TELL MY FUTURE!
           </button>
         </form>
       </div>
@@ -204,13 +195,12 @@
             <span class="future-kids"></span> kids together and adopt a pet
             <span class="future-pet"></span>. Your family enjoys traveling
             around in your <span class="future-vehicle"></span>, which is easily
-            recognizable by everyone in town! You happily retire at the age of
-            <span class="future-retire"></span>. Your future sure is looking
+            recognizable by everyone in town! Your future sure is looking
             bright!
           </p>
 
           <button
-            class="border rounded border-indigo-400 py-4 px-8 lg:py-3 lg:px-4 mt-5 mr-5 lg:w-1/5 bg-indigo-500 hover:bg-indigo-600 text-indigo-100 justify-center self-center play-again-btn"
+            class="border rounded border-indigo-400 py-4 px-8 lg:py-3 lg:px-5 mt-5 mr-5 bg-indigo-500 hover:bg-indigo-600 text-indigo-100 justify-center self-center play-again-btn"
           >
             Play Again!
           </button>
